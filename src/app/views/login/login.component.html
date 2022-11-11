@@ -1,0 +1,17 @@
+<main>
+    <form #userform="ngForm" (ngSubmit)="receberDados()">
+
+        <div class="campo-label">
+            <label for="campo-email">Email</label>
+            <input type="email" id="campo-email" placeholder="email@email.com" [(ngModel)]="userModel.email">
+        </div>
+
+        <div class="campo-label">
+            <label for="campo-senha">Senha</label>
+            <input type="password" id="campo-senha"  placeholder="Senha" [(ngModel)]="userModel.senha">
+        </div>
+
+        <input type="submit" id="btn-enviar" value="Fazer Login">
+
+    </form>
+</main>
